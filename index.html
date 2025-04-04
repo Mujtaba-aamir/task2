@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+
+
+
+    <div class="form-side">
+    <div class="text">
+        <h4>FE Validations:</h4>
+        <ul>
+            <li>Year should be number and must be greater than 1950</li>
+            <li>Current Mileage must be number and between 5000 to 10000</li>
+            <li>All feilds are required except Current Mileage</li>
+        </ul>
+    </div>
+    <div class="form">
+        <div class="form-area">
+            <label for="make">Make<span>*</span></label>
+            <select id="make" class="input-box">
+                <option value="" selected disabled hidden></option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Audi">Audi</option>
+            </select>
+            <br><br>
+            <label for="model">Model<span>*</span></label>
+            <select id="model" class="input-box">
+                <option value="" selected disabled hidden></option>
+                <option value="Civic">Civic</option>
+                <option value="City">City</option>
+                <option value="ES 300H">ES 300H</option>
+            </select>
+            <br><br>
+            <label for="year">Year<span>*</span></label>
+            <input type="number" id="year" class="input-box">
+            <br><br>
+            <label for="mileage">Current Mileage</label>
+            <input type="number" id="mileage" class="input-box">
+            
+<br><br><br>
+<button type="submit">Save</button>
+        </div>
+
+
+
+
+
+        <div class="text-area">
+            <p>Click on save will append row in table and store in localStorage, so when page refreshed, data will be fetched from there</p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="table-side"></div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
